@@ -1,1 +1,7 @@
-X = 5 + 10;
+while(true){
+    for(var i = 0; i < 10; i++){
+        if(i == 3){
+            break;
+        }
+    }
+}
