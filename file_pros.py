@@ -70,7 +70,7 @@ defineTerminal = [
     (r'\bdelete\b',     "DELETE"),
     (r'\bnull\b',       "NULL"),
     (r'\w+[.]\w+',      "DOT"),
-    (r'[A-Za-z_][A-Za-z0-9_]*', "ID"),
+    (r'[A-Za-z_][A-Za-z0-9_]*', "VARIABLE"),
 ]
 
 
