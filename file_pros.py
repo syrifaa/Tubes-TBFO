@@ -12,16 +12,14 @@ defineTerminal = [
     (r'[\+\-]?[0-9]*\.[0-9]+',  "INTEGER"),
     (r'[\+\-]?[1-9][0-9]+',     "INTEGER"),
     (r'[\+\-]?[0-9]',           "INTEGER"),
-
     (r'\n',     "NEWLINE"),
     (r'\(',     "OPEN_ROUND_BRACKET"),
     (r'\)',     "CLOSE_ROUND_BRACKET"),
-    (r'\{',     "OPEN_positionLY_BRACKET"),
-    (r'\}',     "CLOSE_positionLY_BRACKET"),
+    (r'\{',     "OPEN_CURLY_BRACKET"),
+    (r'\}',     "CLOSE_CURLY_BRACKET"),
     (r'\;',     "SEMICOLON"), 
     (r'\:',     "COLON"),
     (r'\,',     "COMMA"),
-
     # Arithmetic Operator
     (r'\*\*',   "POWER"),
     (r'\*=',    "MULTIPLY_EQUAL"),
@@ -34,8 +32,7 @@ defineTerminal = [
     (r'\*',     "MULTIPLY"),
     (r'/',      "DIVIDE"),
     (r'%',      "MODULO"),
-
-    # Comparison Operator
+    # Logical Operator
     (r'<=',         "LESS_EQUAL"),
     (r'<',          "LESS"),
     (r'>=',         "GREATER_EQUAL"),
@@ -45,12 +42,9 @@ defineTerminal = [
     (r'\==',        "IS_EQUAL"),
     (r'\===',       "STRICT_EQUAL"),
     (r'\=(?!\=)',   "EQUAL"),
-
-    # Logical Operator
     (r'\&\&',   "AND"),
     (r'\|\|',   "OR"),
     (r'!',      "NOT"),
-
     # Keyword
     (r'\bif\b',         "IF"),
     (r'\bswitch\b',     "SWITCH"),

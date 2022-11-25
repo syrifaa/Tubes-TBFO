@@ -8,7 +8,7 @@ def read_cfg(cfg_file):
     
     row = file.readline()
     while row != "":
-        head, body = row.replace("\n","").split(" -> ")
+        head, body = row.replace("\n","").split(" ->")
         if head not in cfg.keys():
             cfg[head] = [body.split(" ")]
         else:
