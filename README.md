@@ -36,13 +36,13 @@ Prerequirement:
 
 ## Usage
 Method 1:
-  1. `python3 main.py <file_cnf>` 
+  1. `python3 src/main.py testcase/<file_grammar>` 
 
   
 Method 2:
-  1. `py main.py`
+  1. `py src/main.py testcase/<file_grammar>`
 
-  Penggunaan awalan (prefix, py atau python3) tergantung apda os yang digunakan.
+  Penggunaan awalan (prefix, py atau python3) tergantung pada os yang digunakan.
   Pada linux gunakan `python3` sedangkan mac OS dan Windows gunakan `py`
 
 
