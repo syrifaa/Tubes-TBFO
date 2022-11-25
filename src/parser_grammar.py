@@ -3,9 +3,6 @@
 def parser_CYK(cnf, input_string):
     """
     CYK algorithm for parsing a string with a given CNF grammar
-    :param cnf: CNF grammar
-    :param input_string: input string
-    :return: True if the string can be parsed, False otherwise
     """
     w = input_string.split(" ")
     n = len(w)

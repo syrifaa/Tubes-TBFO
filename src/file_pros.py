@@ -6,7 +6,6 @@ defineTerminal = [
     (r'#[^\n]*',    None),
     (r'[\n]+[ \t]*\'\'\'[(?!(\'\'\'))\w\W]*\'\'\'',  None),
     (r'[\n]+[ \t]*\"\"\"[(?!(\"\"\"))\w\W]*\"\"\"',  None),
-
     (r'\"[^\"\n]*\"', "STRING"),
     (r'\'[^\'\n]*\'', "STRING"),
     (r'[\+\-]?[0-9]*\.[0-9]+',  "INTEGER"),
@@ -78,9 +77,9 @@ token1 = r'[\n]+[ \t]*\'\'\'[(?!(\'\'\'))\w\W]*\'\'\''
 token2 = r'[\n]+[ \t]*\"\"\"[(?!(\"\"\"))\w\W]*\"\"\"'
 
 def word2token(word, defineTerminal):
-    count = 0 # posisi karakter pada seluruh potongan teks (absolut)
-    position = 1 # posisi karakter relatif terhadap baris tempat dia berada
-    row = 1 # posisi baris saat ini
+    count = 0
+    position = 1
+    row = 1
     tokens = []
     while count < len(word):
         if word[count] == '\n':
@@ -105,8 +104,7 @@ def word2token(word, defineTerminal):
         if valid:
             count = valid.end(0)
         else:
-            print("ILLEGAL CHARACTER")
-            print("SYNTAX ERROR")
+            print("Syntax Error")
             sys.exit(1)
         position += 1
     return tokens

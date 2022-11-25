@@ -16,18 +16,7 @@ if __name__ == "__main__":
 
     # print(CFG2CNF(read_cfg("grammar.txt")))
 
-    if parser_CYK(CFG2CNF(read_cfg("grammar.txt")), createToken(args.nama_file)):
-        print("ACCEPTED")
+    if parser_CYK(CFG2CNF(read_cfg("src/grammar.txt")), createToken(args.nama_file)):
+        print("Accepted")
     else:
-        print("SYNTAX ERROR")
-
-    # print(read_cfg("grammar_test.txt"))
-
-    # print(CFG2CNF(read_cfg("grammar_test.txt")))
-
-    # file = open(args.nama_file, "r")
-    # if parser_CYK(CFG2CNF(read_cfg("grammar_test.txt")), file.read()):
-    #     print("ACCEPTED")
-    # else:
-    #     print("SYNTAX ERROR")
-    # file.close()
+        print("Syntax Error")
