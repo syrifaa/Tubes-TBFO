@@ -3,13 +3,13 @@
 
 
 def read_cfg(cfg_file):
-    file = open(cfg_file, 'r')
+    file = open(cfg_file, "r")
     cfg = {}
     
     row = file.readline()
     while row != "":
-        head, body = row.replace("\n","".split)("->")
-        if head not in cfg:
+        head, body = row.replace("\n","").split(" -> ")
+        if head not in cfg.keys():
             cfg[head] = [body.split(" ")]
         else:
             cfg[head].append(body.split(" "))
