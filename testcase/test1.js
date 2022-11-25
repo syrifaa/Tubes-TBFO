@@ -3,5 +3,5 @@ while(true){
         if(i == 3){
             break;
         }
-    }
+    } i++;
 }

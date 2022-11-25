@@ -1,7 +1,3 @@
-
-
-
-
 def read_cfg(cfg_file):
     file = open(cfg_file, "r")
     cfg = {}
